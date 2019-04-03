@@ -5,17 +5,26 @@ a [Sails v1](https://sailsjs.com) application
 # Step By Step
 
 1. Install sails js globally using npm
+
    npm install sails -g
+
 2. Create project
+
    sails new project-name & go to project-name directory
+
 3. Install depedency for db connection (https://sailsjs.com/plugins/databases)
+
    npm install sails-mongo -> For MongoDB
+
 4. Config db connecttion in config/datastores.js & config/env/production.js (https://sailsjs.com/documentation/reference/configuration/sails-config-datastores)
+
    default: {
    adapter: 'sails-mongo(driver_name)',
    url: 'mongodb(protoocol_name)://(username):(password)@localhost(host):27017(port)/blog(db_name)'
    }
+
 5. Generate API
+
    sails generate api artikel(API name)
 
 ### Links
